@@ -1,77 +1,10 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-<script type= 'text/javascript'>
-function cambiacolor(){
-var r, g, b, color;
-r = document.getElementById('slideR').value;
-g = document.getElementById('slideG').value;
-b = document.getElementById('slideB').value;
-color = 'rgb('+r+','+g+','+b+')';
-document.getElementById("titulo").style.color= color;
-			
-} 
-</script>
-
-<style>
-body {
-    background-color: white;
-}
-
-h1 {
-    color: grey;
-    text-align: center;
- color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-} 
-
-nav {
-text-align:center;
-margin-right: 20%;
-margin-left: 20%;
-border-radius: 10px;
-padding:1.5%
-}
-img { 
-height:50% ; width:50% ; 
-display:block; 
-margin-left:auto;
-margin-right:auto;
-opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-img:hover {
-    opacity: 1.0;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
-}
-h2 {
- border: 2px solid red;
-    border-radius: 5px;
-margin-right: 5%;
-margin-left: 5%;
-border-radius: 10px;
-padding:1.5%
-}
-p {  border-top-style: dotted;
-    border-right-style: solid;
-    border-bottom-style: dotted;
-    border-left-style: solid;
-text-align: center
-margin-right: 5%;
-margin-left: 5%;
-border-radius: 10px;
-padding:1.5%
-
-}
-.link {
-padding:1.5px;
-}
-.link:hover {
-background-color:tomato;
-}
-</style>
+    <title>Historia del Iphone</title>
+     <link rel="stylesheet" type="text/css" href="Estilo.css">
+     <script src="Java.js"></script>
 </head>
 
 <body>
@@ -83,9 +16,9 @@ background-color:tomato;
 <div class= "sld"><input type="range" value= "125.5" min= "0" max= "255" id="slideB" onchange="cambiacolor()" oninput="cambiacolor()"></div>
 
 
-<p>El smartphone de Apple tuvo grandes cambios a lo largo de su historia, bajo la mirada de Steve Jobs y Tim Cook. Así fue el camino hasta el iPhone X.</p>
+<p>El smartphone de Apple tuvo grandes cambios a lo largo de su historia, bajo la mirada de Steve Jobs y Tim Cook. As? fue el camino hasta el iPhone X.</p>
 
-<nav>
+<nav class="menu">
 <a href="#Iphone1" class="link">iphone 1</a>
 
 <a href="#Iphone3g" class="link">iphone3g</a>
@@ -116,135 +49,124 @@ background-color:tomato;
 
 
 
+<div class="tarjeta">
+<h2 id="Iphone1"> Iphone 1, 2007 </h2>
+<div class="grid-container">
+    <div class="grid-item">
+<img src="jobs.jpg" alt="jobs" id="imagen1">
+    </div>
+    <div class="grid-item">
+<p>  2007, Steve Jobs hizo historia al presentar el primer iPhone. La pantalla de 3,5 pulgadas fue pionera en su clase al contar con un monitor t?ctil que combinaba a un iPod con un navegador web con un tel?fono. La c?mara de 2 MP se encontraba en la parte posterior del dispositivo (a?n no se hab?an impuesto las selfies) y solo estaba disponible para AT & T, seg?n record? el diario New York Daily News.</p>
 
-<h2 id="Iphone1"> iPhone 1, 2007 </h2>
-
-
-<img src="jobs.jpg" alt="jobs">
-
-<p>  2007, Steve Jobs hizo historia al presentar el primer iPhone. La pantalla de 3,5 pulgadas fue pionera en su clase al contar con un monitor táctil que combinaba a un iPod con un navegador web con un teléfono. La cámara de 2 MP se encontraba en la parte posterior del dispositivo (aún no se habían impuesto las selfies) y solo estaba disponible para AT & T, según recordó el diario New York Daily News.
-
-Desde el día 1, las personas esperaban en fila durante días para obtener el primer lote de iPhones antes de que se agoten. El teléfono estuvo disponible para el público el 29 de junio de 2007 en color negro y aluminio. Fue vendido por última vez en julio de 2008.</p>
-
-
-<h2 id="Iphone3g">iPhone 3G, 2008 </h2>
-
-
-<img src="iphone2.jpg" alt="iphone2">
-
-
-<p> Un año más tarde, el CEO de Apple volvió a las portadas de todos los medios con el iPhone 3G. El 9 de junio de 2008 Steve Jobs mostró un teléfono que era más delgado, tenía una cubierta de plástico y en dos colores: blanco o negro. De todas formas, la noticia más importante de esa fecha fue el lanzamiento de App Store, que les permitió a los usuarios acceder a una gran cantidad de aplicaciones y no solo a las que venían con el teléfono, como en el iPhone original.</p>
+<p>Desde el día 1, las personas esperaban en fila durante d?as para obtener el primer lote de iPhones antes de que se agoten. El tel?fono estuvo disponible para el p?blico el 29 de junio de 2007 en color negro y aluminio. Fue vendido por ?ltima vez en julio de 2008.</p>
+    </div>
+   
+  </div>
+  
+</div>
 
 
-<h2 id="Iphone3gs"> iPhone 3Gs, 2009 </h2>
+<div class="tarjeta">
+<h2 id="Iphone3g">Iphone 3G, 2008 </h2>
+<div class="grid-container">
+    <div class="grid-item">
+    <img src="iphone2.jpg" alt="iphone2">
+    </div>
+    <div class="grid-item">
+   <p> Un a?o m?s tarde, el CEO de Apple volvi? a las portadas de todos los medios con el iPhone 3G. El 9 de junio de 2008 Steve Jobs mostr? un tel?fono que era m?s delgado, ten?a una cubierta de pl?stico y en dos colores: blanco o negro. De todas formas, la noticia m?s importante de esa fecha fue el lanzamiento de App Store, que les permiti? a los usuarios acceder a una gran cantidad de aplicaciones y no solo a las que ven?an con el tel?fono, como en el iPhone original.</p>
+  </div>
+</div>
+</div>
 
 
+<div class="tarjeta">
+<h2 id="Iphone3gs"> Iphone 3Gs, 2009 </h2>
+<div class="grid-container">
+    <div class="grid-item">
 <img src="iphone3.jpg" alt="iphone3">
+    </div>
+<div class="grid-item">
+<p> El 8 de junio de 2009, Jobs anunci? el iPhone 3Gs, una versi?n m?s r?pida y actualizada del 3G. Aunque el dise?o del tel?fono era id?ntico al 3G, el 3G fue el doble de r?pido y menos costoso. Atrajo a multitudes en todo el mundo cuando lleg? a las tiendas el 19 de junio de 2009 con sus modelos de 8GB, 16GB y 32GB.</p>
+</div>
+</div>
+</div>
 
 
-<p> El 8 de junio de 2009, Jobs anunció el iPhone 3Gs, una versión más rápida y actualizada del 3G. Aunque el diseño del teléfono era idéntico al 3G, el 3G fue el doble de rápido y menos costoso. Atrajo a multitudes en todo el mundo cuando llegó a las tiendas el 19 de junio de 2009 con sus modelos de 8GB, 16GB y 32GB.</p>
 
-
-
-<h2 id="Iphone4"> iPhone 4, 2010 </h2>
-
-
+<div class="tarjeta">
+<h2 id="Iphone4"> Iphone 4, 2010 </h2>
+<div class="grid-container">
+    <div class="grid-item">
 <img src="iphone4.jpg" alt="iphone4">
+    </div>
+<div class="grid-item">
+<p>La cuarta versi?n provoc? uno de los mayores cambios del dise?o del iPhone. Era una tecnolog?a plana, elegante y con funciones que superaba todo en el mercado en ese momento; sin mencionar que fue la primera vez que present? la c?mara frontal en el tel?fono, dando origen a la generaci?n de las selfies y el Facetime. Tambi?n fue la primera vez que el video HD estaba disponible para acompa?ar a la c?mara de 5 MP en ambos lados.</p>
+</div>
+</div>
+</div>
 
 
-<p>La cuarta versión provocó uno de los mayores cambios del diseño del iPhone. Era una tecnología plana, elegante y con funciones que superaba todo en el mercado en ese momento; sin mencionar que fue la primera vez que presentó la cámara frontal en el teléfono, dando origen a la generación de las selfies y el Facetime. También fue la primera vez que el video HD estaba disponible para acompañar a la cámara de 5 MP en ambos lados.</p>
-
-
-
-<h2 id="Iphone4s"> iphone 4s </h2>
-
-
+<div class="tarjeta">
+<h2 id="Iphone4s"> Iphone 4s </h2>
+<div class="grid-container">
+    <div class="grid-item">
 <img src="iphone4s.jpg" alt="iphone4s">
+</div>
+<div class="grid-item">
+<p> Despu?s de que Steve Jobs renunciara como director ejecutivo por sus problemas de salud, la clientela tem?a que la calidad de los productos de Apple disminuyera. Pero Jobs dej? su empresa en buenas manos ya que el iPhone 4s se anunci? unas semanas m?s tarde, el 4 de octubre de 2011. Siri, el programa de comandos de voz de Apple, se dio a conocer junto al modelo de 64 GB. Sali? a la venta el 14 de octubre de 2011.</p>
+</div>
+</div>
+</div>
 
-
-<p> Después de que Steve Jobs renunciara como director ejecutivo por sus problemas de salud, la clientela temía que la calidad de los productos de Apple disminuyera. Pero Jobs dejó su empresa en buenas manos ya que el iPhone 4s se anunció unas semanas más tarde, el 4 de octubre de 2011. Siri, el programa de comandos de voz de Apple, se dio a conocer junto al modelo de 64 GB. Salió a la venta el 14 de octubre de 2011.</p>
-
-
-
-<h2 id="Iphone5"> iphone5 </h2>
-
-
+<div class="tarjeta">
+<h2 id="Iphone5"> Iphone5 </h2>
+<div class="grid-container">
+    <div class="grid-item">
 <img src="iphone5.jpg" alt="iphone5">
+</div>
+<div class="grid-item">
+<p> Durante un evento de Apple el 12 de septiembre de 2012, Tim Cook, el hombre que tom? el tim?n de Apple tras la retirada de Jobs, anunci? el iPhone 5, el primero en contar con una pantalla de 4 pulgadas y pesar un 20% menos que su predecesor. Tambi?n fue m?s delgado y m?s r?pido, y Cook afirm? que era el mayor cambio en el iPhone desde la primera generaci?n en 2007. Contaba con una c?mara de 8 MP y hasta 10 horas de navegaci?n por la web.</p>
+</div>
+</div>
+</div>
 
-
-<p> Durante un evento de Apple el 12 de septiembre de 2012, Tim Cook, el hombre que tomó el timón de Apple tras la retirada de Jobs, anunció el iPhone 5, el primero en contar con una pantalla de 4 pulgadas y pesar un 20% menos que su predecesor. También fue más delgado y más rápido, y Cook afirmó que era el mayor cambio en el iPhone desde la primera generación en 2007. Contaba con una cámara de 8 MP y hasta 10 horas de navegación por la web.</p>
-
-
-
-<h2 id="Iphone5s"> iphone 5s </h2>
-
-
-<img src="iphone5s.jpg" alt="iphone5s">
-
-
-
-<p>Anunciado el 10 de septiembre de 2013, Apple llegó a sus clientes con no una, sino DOS enormes actualizaciones para el iPhone. El iPhone 5s fue el primer teléfono en ofrecer una opción en color dorado aparte de las opciones en blanco y negro habituales. Los 5 también presentaban un sistema operativo mucho más rápido, Touch ID, y el comienzo de aplicaciones integradas de salud y estado físico. El mismo día, Apple también presentó el 5c, el primer modelo de plástico que era más barato y presentaba divertidos colores como verde, azul, amarillo y rosa.
-
-Ambos modelos llegaron a las tiendas el 20 de septiembre de 2013. Con 2 modelos para elegir, era la primera vez que Apple ofrecía un teléfono significativamente más económico que el más nuevo. </p>
-
-
-<h2 id="Iphone6"> iphone 6 </h2>
-
-
-
-<img src="iphone6.jpg" alt="iphone6">
-
-<p> Por segundo año consecutivo, Apple presentó dos teléfonos al mismo tiempo. Ambos presentaban bordes redondeados, la primera vez que se veía el estilo en el iPhone desde 2009. Mientras que los 6 se jactaban de tener una pantalla de 4,7 pulgadas, el enorme 6 Plus presentaba la pantalla más grande del iPhone hasta el momento, una de 5.5 pulgadas. Comenzaron a venderse el 19 de septiembre de 2014. Ambos presentaban procesadores más rápidos, cámaras mejoradas y múltiples opciones de almacenamiento.</p> 
-
-<h2 id="Iphone6s"> iphone 6s </h2>
-
-
-<img src="iphone6s.jpg" alt="iphone6s">
-
-
-
-<p>El CEO de Apple, Tim Cook, los anunció el 9 de septiembre de 2015. Fueron los primeros en ofrecer un touch 3D, una cámara de 12 MP con tecnología de píxeles avanzada, así como una cámara de 5 MP Facetime HD con Retina Flash. El color rosado también se agregó a la línea de opciones. Aunque la firma decidió mantener el aspecto de los modelos exactamente igual que el 6 y 6 Plus, internamente eran más poderosos que nunca; hasta que salió el iPhone siguiente.</p>
-
-
-<h2 id="IphoneSE"> iphoneSE </h2>
-
-<img src="iphoneSE.jpg" alt="iphoneSE">
-
-
-<p> ¿Es otro iPhone 5? En lugar de ir más grande y mantener su diseño elegante de borde redondeado, Apple decidió volver al pasado con un modelo que se ve muy similar al popular iPhone 5 de 2012. Internamente, el teléfono era excelente ya que contaba con una cámara iSight de 12 MP, video 4K, un coprocesador de movimiento M9 supereficiente y LTE y Wi-Fi más rápidos. Se anunció el 21 de marzo de 2016.</p>
-
-
-
-<h2 id="Iphone7"> iphone7 </h2>
-
-
+<div class="tarjeta">
+<h2 id="Iphone7"> Iphone7 </h2>
+<div class="grid-container">
+    <div class="grid-item">
 <img src="iphone7.jpg" alt="iphone7">
+</div>
+<div class="grid-item">
+<p>El 7 de septiembre de 2016, despu?s de muchos rumores y mucha especulaci?n, Apple finalmente dio a conocer el muy esperado iPhone 7. Phil Schiller, vicepresidente senior de Marketing Mundial de Apple Inc, subi? al escenario durante un evento especial para presentar el iPhone 7 y 7 Plus. Adem?s de la c?mara, el procesador y la pantalla con muchas mejoras, estos modelos no tendr?an una toma de auriculares ya que Apple tambi?n presentaba unos aud?fonos inal?mbricos llamados AirPods.</p>
+</div>
+</div>
+</div>
 
 
-
-<p>El 7 de septiembre de 2016, después de muchos rumores y mucha especulación, Apple finalmente dio a conocer el muy esperado iPhone 7. Phil Schiller, vicepresidente senior de Marketing Mundial de Apple Inc, subió al escenario durante un evento especial para presentar el iPhone 7 y 7 Plus. Además de la cámara, el procesador y la pantalla con muchas mejoras, estos modelos no tendrían una toma de auriculares ya que Apple también presentaba unos audífonos inalámbricos llamados AirPods.</p>
-
-
-<h2 id="Iphone8"> iphone8 </h2>
-
-
+<div class="tarjeta">
+<h2 id="Iphone8"> Iphone8 </h2>
+<div class="grid-container">
+    <div class="grid-item">
 <img src="iphone8.jpg" alt="iphone8">
+    </div>
+<div class="grid-item">
+<p> Los tel?fonos llegaron a pantallas Retina HD de 4.7 y 5.5 pulgadas y est?n disponibles en color plateado, gris espacial y tienen un sensor de 12 megap?xeles, y vienen con nuevos filtros fotogr?ficos. El iPhone 8 Plus tambi?n se anunci? en el evento del 12 de septiembre de 2017. El iPhone 8 tambi?n cuenta con un dise?o de vidrio, protegido por una banda de aluminio de grado aeroespacial. Al igual que el iPhone X, la carga inal?mbrica es posible debido a la parte posterior del vidrio.</p>
+</div>
+</div>
+</div>
 
 
-
-<p> Los teléfonos llegaron a pantallas Retina HD de 4.7 y 5.5 pulgadas y están disponibles en color plateado, gris espacial y tienen un sensor de 12 megapíxeles, y vienen con nuevos filtros fotográficos. El iPhone 8 Plus también se anunció en el evento del 12 de septiembre de 2017. El iPhone 8 también cuenta con un diseño de vidrio, protegido por una banda de aluminio de grado aeroespacial. Al igual que el iPhone X, la carga inalámbrica es posible debido a la parte posterior del vidrio.</p>
-
-
-<h2 id="IphoneX"> iphoneX </h2>
-
-
+<div class="tarjeta">
+<h2 id="IphoneX"> IphoneX </h2>
+<div class="grid-container">
+    <div class="grid-item">
 <img src="iphoneX.jpg" alt="iphoneX">
-
-
-
-<p> Después de que Apple anunciara el lanzamiento del iPhone X en su campus en Cupertino, California, el 12 de septiembre de 2017, el nuevo dispositivo se lanzó el 3 de noviembre de 2017. El iPhone X tiene un diseño "completamente de vidrio" y pantalla Super Retina de 5,8 pulgadas, carga inalámbrica, reconocimiento facial para desbloquear el teléfono, emojis animados, un chip Bionic A11 para un rendimiento mejorado y resistencia al polvo y al agua.</p>
-
-
+</div>
+<div class="grid-item">
+<p> Despu?s de que Apple anunciara el lanzamiento del iPhone X en su campus en Cupertino, California, el 12 de septiembre de 2017, el nuevo dispositivo se lanz? el 3 de noviembre de 2017. El iPhone X tiene un dise?o "completamente de vidrio" y pantalla Super Retina de 5,8 pulgadas, carga inal?mbrica, reconocimiento facial para desbloquear el tel?fono, emojis animados, un chip Bionic A11 para un rendimiento mejorado y resistencia al polvo y al agua.</p>
+</div>
+</div>
+</div>
 
 
 
